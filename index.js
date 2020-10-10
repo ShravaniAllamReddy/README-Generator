@@ -1,16 +1,103 @@
-// array of questions for user
-const questions = [
+const inquirer = require("inquirer");
+const fs = require("fs");
+const util = require("util");
+const generateMarkdown = require("./utils/generateMarkdown.js");
+const writeFileAsync = util.promisify(fs.writeFile);
 
-];
 
-// function to write README file
-function writeToFile(fileName, data) {
+function userInput() {
+
+    // array of questions for user
+    return inquirer.prompt([
+
+        {
+            type: "input",
+            message: "What is your Project Title?",
+            name: "title"
+        },
+        {
+            type: "input",
+            message: "Please enter a short description",
+            name: "description"
+        },
+        {
+            type: "input",
+            message: "Installation instructions",
+            name: "installation"
+        },
+        {
+            type: "input",
+            message: "Enter the Usage Information",
+            name: "usage"
+        },
+        {
+            type: "input",
+            message: "Credits:",
+            name: "credits"
+        },
+        {
+            type: "list",
+            message: "Choose any one license:",
+            name: "license",
+            choices: [
+
+                new inquirer.Separator('Which of the following best describes your situation? '),
+                {
+                    name: 'Apache2.0'
+                },
+                {
+                    name: 'MIT'
+                },
+                {
+                    name: 'Unlicense'
+                }
+
+            ]
+        },
+        {
+            type: "input",
+            message: "Contribution Guidelines",
+            name: "contributing"
+        },
+        {
+            type: "input",
+            message: "Badges",
+            name: "badges"
+        },
+
+        {
+            type: "input",
+            message: "Tests",
+            name: "tests"
+        },
+        {
+            type: "input",
+            message: "What is your GitHub Username?",
+            name: "github"
+        },
+        {
+            type: "input",
+            message: "What is your Email address?",
+            name: "email"
+        }
+
+    ]);
 }
+
 
 // function to initialize program
-function init() {
+async function init() {
+    try {
+        const data = await userInput();
+        const readme = generateMarkdown(data);
+        await writeFileAsync("fileREADME.md", readme);
 
+        console.log("Successfully wrote to README.md");
+    } catch (err) {
+        console.log(err);
+    }
 }
+
 
 // function call to initialize program
 init();
