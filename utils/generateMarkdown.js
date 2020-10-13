@@ -7,12 +7,9 @@ function generateMarkdown(data) {
   
 ## Description:
   
-    ${data.description}
+  ${data.description}
   
-## Usage:
-  
-    ${data.usage}
-  
+
 ## Table of Contents:
   
 * [Installation](#installation)
@@ -23,33 +20,36 @@ function generateMarkdown(data) {
   
 ## Installation:
   
-    ${data.installation}
+  ${data.installation}
+
+## Usage:
+  
+  ${data.usage}
   
 ## Credits:
   
-    ${data.credits}
+  ${data.credits}
   
 ## License:
   
-   ${data.license}  
+  Copyright © 2020, ${data.github}. 
+  Licensed under ${data.license} , you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at https://opensource.org/licenses/${data.license}
+
 
 ## Contributing:
    
-    ${data.contributing}
+  ${data.contributing}
   
 ## Tests:
   
-    ${data.tests}
-    
-## Badge: 
-  
-    ${data.badges}
+  ${data.tests}
     
     
 ## Questions:
   
-     Link to my GitHub Profile : https://github.com/${data.github}
-     If you have any questions, you can reach out to me at ${data.email} `;
+  Link to my GitHub Profile : https://github.com/${data.github}
+  If you have any questions, you can reach out to me at ${data.email} `;
 
 }
 
