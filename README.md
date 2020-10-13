@@ -43,10 +43,10 @@ How to install your entire project
 
  Example:
 
- "scripts": {
+  `"scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js"
-  }
+   }`
 
 * WHEN you are prompted for information about your application repository
   THEN a quality, professional README.md is generated with the title of your project and sections entitled Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions
@@ -66,7 +66,12 @@ How to install your entire project
 
 ## Credits:
   
-  Markdown License badges: (https://gist.github.com/artem-solovev/e1602722f84835f35daef4dfb3df5500#apache-20-license)
+Markdown License badges: (https://gist.github.com/artem-solovev/e1602722f84835f35daef4dfb3df5500#apache-20-license)
+
+Packages Used:
+
+* inquirer: CLI to make interactive applications in the console
+* fs/http/other node packages: Packages we don't have to install, as they are part of native Node!
 
 
 ## License 
@@ -74,12 +79,6 @@ How to install your entire project
   Copyright © 2020, ShravaniAllamReddy. 
   Licensed under MIT , you may not use this file except in compliance with the License.
   You may obtain a copy of the License at https://opensource.org/licenses/MIT
-
-
-## Useful Packages:
-
-* inquirer: CLI to make interactive applications in the console
-* fs/http/other node packages: Packages we don't have to install, as they are part of native Node!
 
 
 ## Contributing:
