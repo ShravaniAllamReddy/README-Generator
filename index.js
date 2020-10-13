@@ -61,12 +61,6 @@ function userInput() {
         },
         {
             type: "input",
-            message: "Badges",
-            name: "badges"
-        },
-
-        {
-            type: "input",
             message: "Tests",
             name: "tests"
         },
