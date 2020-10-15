@@ -1,5 +1,7 @@
 # README-Generator
 
+<img src= "examplereadmesnap.JPG" alt="readme">
+
 ## Description
 
 Command-line application that dynamically generates a professional README.md
@@ -39,14 +41,16 @@ How to install your entire project
 
 ## Usage 
 
- npm run start  - we use this command to run the application once we include `"start" :  "node filename.js" under "scripts" in package.json`
+npm run start  - we use this command to run the application once we include `"start" :  "node filename.js" under "scripts" in package.json`
 
- Example:
+Example:
 
   `"scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js"
    }`
+
+Instructions:
 
 * WHEN you are prompted for information about your application repository
   THEN a quality, professional README.md is generated with the title of your project and sections entitled Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions

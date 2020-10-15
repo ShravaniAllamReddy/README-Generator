@@ -1,11 +1,10 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
   
-  
 # Readme-Generator
   
 ## Description:
   
-  CLI that generates professional README.md files
+  CLI that generates professional readme files
   
 
 ## Table of Contents:
@@ -26,7 +25,7 @@
   
 ## Credits:
   
-  Credits to my Instructors and TAs who helped me to complete this.
+  Credits to my Instructor and TAs who helped me in completing this application.
   
 ## License:
   
@@ -37,7 +36,7 @@
 
 ## Contributing:
    
-  Contributions, issues and requests are welcome.
+  Contributions, Issues and requests are welcome
   
 ## Tests:
   
