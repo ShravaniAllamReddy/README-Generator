@@ -16,22 +16,22 @@ function userInput() {
             name: "title"
         },
         {
-            type: "input",
+            type: "editor",
             message: "Please enter a short description",
             name: "description"
         },
         {
-            type: "input",
+            type: "editor",
             message: "Installation instructions",
             name: "installation"
         },
         {
-            type: "input",
+            type: "editor",
             message: "Enter the Usage Information",
             name: "usage"
         },
         {
-            type: "input",
+            type: "editor",
             message: "Credits:",
             name: "credits"
         },
@@ -41,7 +41,7 @@ function userInput() {
             name: "license",
             choices: [
 
-                new inquirer.Separator('Which of the following best describes your situation? '),
+                new inquirer.Separator('Which of the following best describes your situation?'),
                 {
                     name: 'Apache2.0'
                 },
@@ -49,13 +49,13 @@ function userInput() {
                     name: 'MIT'
                 },
                 {
-                    name: 'Unlicense'
+                    name: 'GNUGPL'
                 }
 
             ]
         },
         {
-            type: "input",
+            type: "editor",
             message: "Contribution Guidelines",
             name: "contributing"
         },
