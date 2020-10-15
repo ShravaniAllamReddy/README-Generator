@@ -49,7 +49,7 @@ function userInput() {
                     name: 'MIT'
                 },
                 {
-                    name: 'GNUGPL'
+                    name: 'GPL-3.0'
                 }
 
             ]
