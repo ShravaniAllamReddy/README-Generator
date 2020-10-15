@@ -1,10 +1,10 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
   
-# Readme-Generator
+# Readme Generator
   
 ## Description:
   
-  CLI that generates professional readme files
+  CLI that generates professional README.md files.
   
 
 ## Table of Contents:
@@ -13,6 +13,7 @@
 * [Usage](#usage)
 * [Credits](#credits)
 * [License](#license)
+* [Questions](#questions)
 
   
 ## Installation:
@@ -22,6 +23,7 @@
 ## Usage:
   
   node index.js
+
   
 ## Credits:
   
@@ -36,7 +38,7 @@
 
 ## Contributing:
    
-  Contributions, Issues and requests are welcome
+  Contributions and Issues are welcome.
   
 ## Tests:
   
